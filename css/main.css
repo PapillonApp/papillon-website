@@ -60,6 +60,8 @@ nav .downloadButton {
     font-size: 18px;
     font-weight: 500;
     color: #4E4443;
+    transition: all;
+    transition-duration: 0.2s;
 }
 
 nav .downloadButton:hover {
@@ -138,6 +140,8 @@ nav .downloadButton:hover {
     width: fit-content;
     margin-right: 10px;
     margin-bottom: 10px;
+    transition: all;
+    transition-duration: 0.2s;
 }
 
 .arg p {
