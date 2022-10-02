@@ -1,297 +1,329 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/gotham');
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/gotham");
 
 body {
-    max-width: 1100px;
-    margin: 0 auto;
+  background: url("../assets/BackgroundGradient.png"), #000;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
+}
 
-    background: url('../assets/BackgroundGradient.png'), #000;
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
+main {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-    color: #fff;
-    margin: 0;
-    font-family: 'Space Grotesk', sans-serif;
+  color: #fff;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 nav {
-    height: 100px;
-    display: flex;
-    align-items: center;
+  height: 100px;
+  display: flex;
+  align-items: center;
 }
 
 nav .logo {
-    height: 32px;
+  height: 32px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    padding: 0 20px;
+  list-style: none;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  padding: 0 20px;
 }
 
 nav ul li {
-    margin-left: 40px;
-    font-weight: 500;
-    font-size: 18px;
+  margin-left: 40px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 nav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 nav .downloadButton {
-    padding: 10px 18px;
-    background-color: #fff;
-    border-radius: 300px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #4E4443;
+  padding: 10px 18px;
+  background-color: #fff;
+  border-radius: 300px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4e4443;
 }
 
 nav .downloadButton:hover {
-    background-color: #ffffff22;
-    color: #fff;
-    text-decoration: none;
+  background-color: #ffffff22;
+  color: #fff;
+  text-decoration: none;
+}
+
+#fixedDownloadButton {
+  display: none;
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 16px 4px;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4e4443;
+  text-decoration: none;
+  z-index: 999;
+  text-align: center;
+}
+
+#fixedDownloadButton:hover {
+  background-color: rgb(208, 208, 208);
+  color: #000;
 }
 
 #header {
-    display: flex;
+  display: flex;
 }
 
 #headerText {
-    width: 100%;
-    margin-right: 50px;
+  width: 100%;
+  margin-right: 50px;
 }
 
 #headerImage {
-    width: 40%;
+  width: 40%;
 }
 
 #headerText h1 {
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 82px;
-    line-height: 103.1%;
-    /* or 85px */
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 82px;
+  line-height: 103.1%;
+  /* or 85px */
 
-    letter-spacing: -0.055em;
+  letter-spacing: -0.055em;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 
-    margin-bottom: 20px;
-    margin-top: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #headerText p {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 110%;
-    /* or 24px */
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+  /* or 24px */
 
-
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .material-symbols-outlined {
-    font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 #ArgsList {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .arg {
-    border-radius: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 15px;
-    background-color: #ffffff15;
-    width: fit-content;
-    margin-right: 10px;
-    margin-bottom: 10px;
+  border-radius: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #ffffff15;
+  width: fit-content;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .arg p {
-    font-size: 18px !important;
-    font-weight: 500;
-    margin-left: 10px;
-    color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 500;
+  margin-left: 10px;
+  color: #fff !important;
 }
 
 .arg:hover {
-    background-color: #ffffff22;
-    cursor: default;
+  background-color: #ffffff22;
+  cursor: default;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #000;
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ffffff44;
-    border-radius: 300px;
+  background: #ffffff44;
+  border-radius: 300px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff88;
+  background: #ffffff88;
 }
 
-.section {
-    margin-top: 40px;
-    margin-bottom: 50px;
+section {
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 
 hr {
-    opacity: 0.25;
-    margin-bottom: 40px;
+  opacity: 0.25;
+  margin-bottom: 40px;
 }
 
-.section h2 {
-    font-family: 'Gotham';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 103.1%;
-    /* or 49px */
+section h2 {
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 103.1%;
+  /* or 49px */
 
-    letter-spacing: -0.055em;
+  letter-spacing: -0.055em;
 
-    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.5) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
-.section p {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 110%;
-    /* or 24px */
+section p {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+  /* or 24px */
 
-    margin-top: 15px;
-    color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 #opensourceImage {
-    margin-top: 30px;
-    width: 100%;
+  margin-top: 30px;
+  width: 100%;
 }
 
 #add2homeImage {
-    margin-top: 30px;
-    width: 100%;
+  margin-top: 30px;
+  width: 100%;
 }
 
-.section small, .section small * {
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 110%;
-    /* identical to box height, or 20px */
+section small,
+section small * {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  /* identical to box height, or 20px */
 
-
-    color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.25);
 }
 
 @media screen and (max-width: 1200px) {
-    body {
-        max-width: 100%;
-        margin: 0px 40px;
-    }
+  main {
+    max-width: 100%;
+    margin: 0px 40px;
+  }
 
-    #headerImage {
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-    }
+  #headerImage {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+  }
 
-    #demoImage {
-        width: 30vw;
-        object-fit: contain;
-    }
+  #demoImage {
+    width: 30vw;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    #headerImage {
-        display: none;
-    }
+  #headerImage {
+    display: none;
+  }
 
-    #headerText {
-        width: 100%;
-        margin-right: 0;
-    }
+  #headerText {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    nav li:not(.downloadLi) {
-        display: none;
-    }
+  nav li:not(.downloadLi) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 562px) {
-    .downloadLi {
-        display: none;
-    }
+  .downloadLi {
+    display: none;
+  }
 
-    #header {
-        flex-direction: column;
-    }
+  #fixedDownloadButton {
+    display: block;
+  }
 
-    #headerImage {
-        display: block !important;
-    }
+  #header {
+    flex-direction: column;
+  }
 
-    #demoImage {
-        width: 80vw;
-        object-fit: contain;
-    }
+  #headerImage {
+    display: block !important;
+  }
+
+  #demoImage {
+    width: 80vw;
+    object-fit: contain;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    h1 {
-        font-size: 72px !important;
-    }
+  h1 {
+    font-size: 72px !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
-        font-size: 56px !important;
-    }
+  h1 {
+    font-size: 56px !important;
+  }
 }
