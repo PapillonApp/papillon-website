@@ -56,12 +56,14 @@ nav a:hover {
 }
 
 nav .downloadButton {
-  padding: 10px 18px;
-  background-color: #fff;
-  border-radius: 300px;
-  font-size: 18px;
-  font-weight: 500;
-  color: #4e4443;
+    padding: 10px 18px;
+    background-color: #fff;
+    border-radius: 300px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #4E4443;
+    transition: all;
+    transition-duration: 0.2s;
 }
 
 nav .downloadButton:hover {
@@ -153,15 +155,17 @@ nav .downloadButton:hover {
 }
 
 .arg {
-  border-radius: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 15px;
-  background-color: #ffffff15;
-  width: fit-content;
-  margin-right: 10px;
-  margin-bottom: 10px;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #ffffff15;
+    width: fit-content;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all;
+    transition-duration: 0.2s;
 }
 
 .arg p {
